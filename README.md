@@ -30,4 +30,8 @@ Para ello debes realizar las siguientes acciones:
 6. Haz que la gestión de sesiones utilice la persistencia en la BD. Realiza el commit correspondiente.
 7. Haz que la gestión de alumnos utilice la persistencia en la BD. Realiza el commit correspondiente.
 8. Haz que la gestión de citas utilice la persistencia en la BD. Realiza el commit correspondiente.
+<<<<<<< HEAD
 "# Tutorias-v5" 
+=======
+
+>>>>>>> refs/remotes/origin/master
