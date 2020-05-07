@@ -8,6 +8,11 @@ public enum FactoriaFuenteDatos {
 		public IFuenteDatos crear() {
 			return new FactoriaFuenteDatosFicheros();
 		}
+	},
+	MONGODB {
+		public IFuenteDatos crear() {
+			return new FactoriaFuenteDatosMongoDB();
+		}
 	};
 
 	public abstract IFuenteDatos crear();

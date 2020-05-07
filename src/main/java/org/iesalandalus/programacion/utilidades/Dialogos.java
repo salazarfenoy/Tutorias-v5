@@ -2,7 +2,6 @@ package org.iesalandalus.programacion.utilidades;
 
 import java.util.Optional;
 
-import org.iesalandalus.programacion.tutorias.mvc.vista.grafica.controladoriugrafica.ControladorPrincipal;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
