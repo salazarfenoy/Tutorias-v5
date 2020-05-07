@@ -77,9 +77,6 @@ public class Sesion implements Serializable {
 			throw new NullPointerException("ERROR: La fecha no puede ser nula.");
 		}
 
-		if (!fecha.isAfter(LocalDate.now())) {
-			throw new IllegalArgumentException("ERROR: Las sesiones de deben planificar para fechas futuras.");
-		}
 		this.fecha = fecha;
 	}
 
