@@ -63,7 +63,7 @@ public class Profesores implements IProfesores {
 			throw new IllegalArgumentException("ERROR: No se puede buscar un profesor nulo.");
 		}
 		Document documentoProfesor = coleccionProfesores.find()
-				.filter(and(eq(MongoDB.PROFESOR_DNI, profesor.getDni()))).first();
+				.filter(and(eq(MongoDB.DNI, profesor.getDni()))).first();
 		return MongoDB.getProfesor(documentoProfesor);	
 	}
 
@@ -73,7 +73,7 @@ public class Profesores implements IProfesores {
 			throw new IllegalArgumentException("ERROR: No se puede borrar un profesor nulo.");
 		}
 		if (buscar(profesor) != null) {
-			coleccionProfesores.deleteOne(and(eq(MongoDB.PROFESOR_DNI, profesor.getDni())));
+			coleccionProfesores.deleteOne(and(eq(MongoDB.DNI, profesor.getDni())));
 		} else {
 			throw new OperationNotSupportedException("ERROR: No existe ningún profesor con ese DNI.");
 		} 

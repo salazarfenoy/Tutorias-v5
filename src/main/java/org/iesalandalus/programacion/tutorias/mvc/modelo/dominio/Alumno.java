@@ -18,7 +18,7 @@ public class Alumno implements Serializable {
 		setExpediente();
 
 	}
-	
+
 	public Alumno(String nombre, String correo, int identificador) {
 		setNombre(nombre);
 		setCorreo(correo);
@@ -99,18 +99,18 @@ public class Alumno implements Serializable {
 
 		this.expediente = expedienteAsignado.toString();
 	}
-	
+
 	private void setExpediente(int identificador) {
-		
+
 		if(identificador<=0) {
 			throw new NullPointerException("ERROR: El identificador tiene que ser mayor que 0.");
 		}
 		StringBuilder expedienteAsignado = new StringBuilder(PREFIJO_EXPEDIENTE);
 		expedienteAsignado.append(getIniciales() + "_");
 		expedienteAsignado.append(identificador);
-		
+
 		this.expediente = expedienteAsignado.toString();
-		
+
 	}
 
 	public static void asignarIdentificadorFichero(int identificadorFichero) {
