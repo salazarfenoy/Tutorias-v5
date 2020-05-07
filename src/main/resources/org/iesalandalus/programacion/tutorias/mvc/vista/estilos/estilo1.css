@@ -1,0 +1,297 @@
+/*
+ * 
+ * Panel Izquierda
+ * 
+ */
+
+.panelMenuIzquierda {
+    -fx-background-color: linear-gradient(from 90% 25% to 100% 100%, #042c66, #044678);
+}
+
+#botonMenu {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 0 0 0 50;
+    -fx-font-family: "Cambria"
+}
+
+#botonMenu:hover {
+    -fx-background-color: #044689;
+    -fx-opacity: 0.8;
+}
+
+#botonPulsado {
+    -fx-background-color: #002952;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 0 0 0 50;
+    -fx-font-family: "Cambria"
+}
+
+
+/*
+ * 
+ * Alertas, dialogos
+ * 
+ */
+
+.salir {
+    -fx-background-color: #9AD6E2;
+    -fx-opacity: 0.8;
+    -fx-pref-width: 400;
+    -fx-pref-height: 200;
+    -fx-font-size: 20px;
+    -fx-graphic: none;
+    -fx-border-color: #042c66;
+    -fx-border-width: 2px;
+    -fx-text-alignment: center
+}
+
+.salir .content {
+    -fx-fill-text: white;
+    -fx-text-alignment: center
+}
+
+.panelVerCita{
+	 -fx-background-color: #9AD6E2;
+    -fx-opacity: 0.8;
+    -fx-pref-width: 800;
+    -fx-pref-height:300;
+    -fx-font-size: 20px;
+    -fx-graphic: none;
+    -fx-border-color: #042c66;
+    -fx-border-width: 2px;
+    -fx-text-alignment: center
+}
+
+.panelVerCita .content {
+    -fx-fill-text: white;
+    -fx-text-alignment: center
+}
+
+.vBoxCita  {
+	
+    -fx-alignment: top-center
+}
+
+.vBoxCita .label{
+	-fx-underline:true;
+	-fx-font-weight:bold
+}
+
+/*
+ * 
+ * Contenido
+ * 
+ */
+
+.textoPlano {
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+}
+
+.botonComunRegistrar {
+    -fx-background-color: linear-gradient(to bottom, #065EB7, #6EA7E1);
+    -fx-font-size: 18px;
+    -fx-font-family: "Cambria";
+    -fx-text-fill: white;
+    -fx-pref-width: 240;
+    -fx-pref-height: 65;
+}
+
+.botonComunRegistrar:hover {
+    -fx-background-color: linear-gradient(to top, #065EB7, #6EA7E1)
+}
+
+.botonComunBorrar {
+    -fx-pref-width: 240;
+    -fx-pref-height: 65;
+    -fx-background-color: linear-gradient(to bottom, #E84B4B, #F18787);
+    -fx-font-size: 18px;
+    -fx-font-family: "Cambria";
+    -fx-text-fill: white
+}
+
+.botonComunBorrar:hover {
+    -fx-background-color: linear-gradient(to top, #E84B4B, #F18787)
+}
+
+.botonComunVer {
+    -fx-background-color: linear-gradient(to bottom, #6CA219, #9CB970);
+    -fx-pref-width: 240;
+    -fx-pref-height: 65;
+    -fx-font-size: 18px;
+    -fx-font-family: "Cambria";
+    -fx-text-fill: white
+}
+
+.botonComunVer:hover {
+    -fx-background-color: linear-gradient(to top, #6CA219, #9CB970);
+}
+
+
+/*
+ * 
+ * Ver objetos
+ * 
+ */
+
+.textoVer {
+    -fx-text-fill: #A646D7;
+    -fx-border-color: white !important;
+}
+
+.gridPaneAlert {
+    -fx-padding: 20px 20px 20px 20px;
+}
+
+
+/*
+ * 
+ * TableViews
+ * 
+ */
+
+.tablaDatosComun .column-header .label {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-font: 18px "Cambria"
+}
+
+.tablaDatosComun .column-header,
+.tablaDatosComun .filler {
+    -fx-background-color: #042c66;
+    -fx-size: 45;
+    -fx-border-color: -fx-box-border;
+    -fx-border-width: 0 1 3 0;
+    -fx-border-insets: 0;
+}
+
+.tablaDatosComun .table-cell {
+    -fx-padding: 0.5em 0.5em 0.1em 0.3em;
+    -fx-border-color: -fx-box-border -fx-box-border transparent transparent;
+    -fx-font: 13px "Segoe UI";
+    -fx-border-insets: 0;
+    -fx-alignment: CENTER
+}
+
+.tablaDatosComun:focused {
+    -fx-border-color: none
+}
+
+.table-row-cell:empty,
+.table-cell:empty:hover {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.tablaDatosComun,
+.table-view:focused {
+    -fx-background-color: transparent, -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+}
+
+.tablaDatosComun .column-header:hover {
+    -fx-opacity: 0.9
+}
+
+.tablaDatosComun:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #1da0b8;
+    -fx-opacity: 0.6
+}
+
+.tablaDatosComun:row-selection .table-row-cell:filled:selected:hover {
+    -fx-background-color: #1da0b8;
+    -fx-opacity: 1 !important
+}
+
+.tablaDatosComun:row-selection .table-row-cell:filled:selected {
+    -fx-background-color: #1da0b8
+}
+
+
+/*
+ * 
+ * Acordeón
+ * 
+ */
+
+.titled-pane > .title {
+    -fx-background-color: linear-gradient(to bottom, #E5B23D, #E7C371);
+    -fx-pref-width: 240;
+    -fx-pref-height: 65;
+    -fx-font-size: 18px;
+    -fx-font-family: "Cambria";
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 -8;
+    -fx-background-radius: 3
+}
+
+.titled-pane > .title:hover {
+    -fx-background-color: linear-gradient(to top, #E5B23D, #E7C371);
+}
+
+.titled-pane:focused > .title {
+    -fx-background-color: linear-gradient(to top, #E5B23D, #E7C371);
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+    -fx-shape: null;
+    -fx-opacity: 0
+}
+
+.titled-pane .content {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #FCECC8;
+}
+
+
+/*
+  * 
+  * Botón buscar y boton mostrar
+  * 
+  */
+
+.buscarYMostrar {
+    -fx-background-color: #1da0b8
+}
+
+#btBorrar {
+    -fx-background-color: red;
+    -fx-text-fill: white
+}
+
+
+/*
+ * 
+ * Menú contextual
+ * 
+ */
+
+.cMenu {
+    -fx-background-color: #042c66;
+    -fx-text-fill: white
+}
+
+.menu-item .label {
+    -fx-text-fill: white
+}
+
+.menu-item:hover {
+    -fx-background-color: #043E91
+}
+
+.menu-item:focused {
+    -fx-background-color: #043E91
+}
+
+.panelVerCita{
+	-fx-pref-width:700
+}
