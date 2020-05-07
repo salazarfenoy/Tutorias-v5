@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.tutorias.mvc.modelo.negocio.mongodb.utilidades;
+package org.iesalandalus.programacion.tutorias.mvc.modelo.negocio.mongodb;
 
 import org.iesalandalus.programacion.tutorias.mvc.modelo.IFuenteDatos;
 import org.iesalandalus.programacion.tutorias.mvc.modelo.negocio.IAlumnos;
