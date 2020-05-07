@@ -18,7 +18,7 @@ import com.mongodb.client.MongoCollection;
 public class Profesores implements IProfesores {
 
 	private static final String COLECCION = "profesores";
-	
+
 	private MongoCollection<Document> coleccionProfesores;
 
 	@Override
@@ -79,7 +79,7 @@ public class Profesores implements IProfesores {
 		} 
 	}
 
-	
+
 
 }
 

@@ -31,7 +31,7 @@ public class MainApp {
 		}
 		return vista;
 	}
-	
+
 	private static IFuenteDatos procesarArgumentosModelo(String[] args) {
 		IFuenteDatos fuenteDeDatos = FactoriaFuenteDatos.MONGODB.crear();
 		for (String argumento : args) {

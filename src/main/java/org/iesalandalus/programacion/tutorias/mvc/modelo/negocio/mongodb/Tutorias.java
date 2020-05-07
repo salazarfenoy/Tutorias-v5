@@ -19,7 +19,7 @@ import com.mongodb.client.MongoCollection;
 public class Tutorias implements ITutorias {
 
 	private static final String COLECCION = "tutorias";
-	
+
 	private MongoCollection<Document> coleccionTutorias;
 
 	@Override
